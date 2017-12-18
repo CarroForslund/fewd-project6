@@ -1,0 +1,25 @@
+.video-wrapper{
+  margin: 0 auto;
+  display: block;
+  @include mediaquery(medium){
+    margin-top: 3em;
+    width: 80%;
+  };
+}
+
+.transcript-wrapper{
+  width: 80%;
+  margin: 2.5em auto;
+  line-height: 1.5em;
+  span{
+    cursor: pointer;
+  }
+}
+
+.highlight {
+  color: orange;
+}
+
+.mejs__inner .mejs__controls {
+  background-color: orange;
+}

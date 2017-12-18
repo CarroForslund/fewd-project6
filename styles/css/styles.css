@@ -353,4 +353,25 @@ td,
 th {
   padding: 0; }
 
+.video-wrapper {
+  margin: 0 auto;
+  display: block; }
+  @media (min-width: 769px) {
+    .video-wrapper {
+      margin-top: 3em;
+      width: 80%; } }
+
+.transcript-wrapper {
+  width: 80%;
+  margin: 2.5em auto;
+  line-height: 1.5em; }
+  .transcript-wrapper span {
+    cursor: pointer; }
+
+.highlight {
+  color: orange; }
+
+.mejs__inner .mejs__controls {
+  background-color: orange; }
+
 /*# sourceMappingURL=styles.css.map */

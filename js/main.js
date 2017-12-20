@@ -36,6 +36,11 @@
 //   });
 // };
 
+$('#mediaplayer').mediaelementplayer({
+  stretching: 'responsive',
+  features: ['playpause', 'current', 'progress', 'duration', 'volume', 'fullscreen'],
+});
+
 //Variable declaration
 let spans = document.querySelectorAll('.transcript-wrapper span');
 let video = document.getElementsByTagName('video')[0];

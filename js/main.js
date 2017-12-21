@@ -9,7 +9,7 @@ let spans = document.querySelectorAll('.transcript-wrapper span');
 let video = document.getElementsByTagName('video')[0];
 
 //Highlight current part of transcript when video plays
-video.addEventListener('timeupdate', function(event) {
+video.addEventListener('timeupdate', (event) => {
   const currentTime = video.getCurrentTime(); //recognizes where in the video we are
 
   for (let i = 0; i < spans.length; i++) {
@@ -32,7 +32,7 @@ for (let i = 0; i < spans.length; i++) {
   const start = parseFloat(span.dataset.start);
   const end = parseFloat(span.dataset.end);
 
-  span.addEventListener('click', function (event) {
+  span.addEventListener('click', (event) => {
     video.setCurrentTime(start); //Tells where to start playing video
     video.play();
   });
